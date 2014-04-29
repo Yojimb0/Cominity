@@ -1,0 +1,16 @@
+h5 Hi there, it is #{time}
+
+form(action='/login',  method='POST')
+	input(type='text', name='mail', placeholder='Votre email')
+	button Login
+
+hr
+
+form(action='/tantrum/posts',  method='POST')
+	input(type='text', name='title', placeholder='Votre email')
+	textarea(name='content')
+	button Add Post
+
+//- <form method="POST">
+//-   <input type="hidden" name="_method" value="put">
+//- </form>
